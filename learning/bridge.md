@@ -85,7 +85,7 @@ The counted mode is thermal. Its integer outcome $`K`$ has the exact geometric l
 
 ```math
 p_\mu(k)=\frac{\mu^k}{(1+\mu)^{k+1}},\qquad k=0,1,2,\ldots,
-\qquad \operatorname{Var}(K)=\mu(1+\mu).
+\qquad \mathrm{Var}(K)=\mu(1+\mu).
 ```
 
 Gaussian field quadratures therefore lead here to **geometric photon counts**. The full count distribution, rather than only its mean or a Gaussian approximation to frequent outcomes, is what enters the proof. The [model page](../science/model.md#one-pair-one-counted-output) derives the law and credits the inherited OPA receiver.
@@ -95,7 +95,7 @@ Gaussian field quadratures therefore lead here to **geometric photon counts**. T
 For a fixed fraction $`0\lt f\lt 1`$, use $`m_x=m_y=\lfloor fN/2\rfloor`$ pairs at pump phases $`0`$ and $`\pi/2`$. Their sample means are $`Z_x=S_x/m_x`$ and $`Z_y=S_y/m_y`$. Choose
 
 ```math
-\widehat\phi=\operatorname{Arg}\big[(Z_x-q)+i(Z_y-q)\big],
+\widehat\phi=\mathrm{Arg}\big[(Z_x-q)+i(Z_y-q)\big],
 ```
 
 with value zero when both centered means vanish. Measure the remaining $`m_0=N-m_x-m_y`$ pairs at that frozen phase and retain their sum $`S_0`$.
@@ -146,7 +146,7 @@ Then $`q=0.31`$, $`b=0.22`$, $`c=0.01`$, and the group sizes are $`(3,3,4)`$. Co
 The centered pilot vector is $`(7,-93)/300`$, giving
 
 ```math
-\widehat\phi=\operatorname{atan2}(-93,7)
+\widehat\phi=\mathrm{atan2}(-93,7)
 \approx-1.49566917\ \text{radians}.
 ```
 

@@ -23,7 +23,7 @@ Let
 t=\sqrt\kappa,\quad \varepsilon=\frac{ct}{b},\quad
 \Delta=bt+ct^2=bt(1+\varepsilon),\quad
 D_+=(q+\Delta)(1+q+\Delta),
-\tag{F1}
+\qquad\text{(F1)}
 ```
 
 and keep $`w_{\min}=\min\{f/2,1-f\}`$. For every $`0\lt \kappa\lt 1`$,
@@ -37,7 +37,7 @@ E_f(\kappa)\ge
 \left(\sqrt{e(f)}-\frac{\varepsilon}{\sqrt2}\right)_+^2
 \right\}.
 \quad}
-\tag{F2}
+\qquad\text{(F2)}
 ```
 
 Here $`x_+=\max\{x,0\}`$. This is a rigorous bound on all count types and all true phases, not a bound confined to a numerically found saddle.
@@ -46,21 +46,21 @@ Here $`x_+=\max\{x,0\}`$. This is a rigorous bound on all count types and all tr
 
 ```math
 d(z\Vert\mu)=\int_\mu^z\frac{z-s}{s(1+s)}\,ds.
-\tag{F3}
+\qquad\text{(F3)}
 ```
 
 Whenever $`0\le z\le q+\Delta`$ and $`0\lt \mu\le q+\Delta`$, it follows, including $`z=0`$ by continuity, that
 
 ```math
 d(z\Vert\mu)\ge\frac{(z-\mu)^2}{2D_+}.
-\tag{F4}
+\qquad\text{(F4)}
 ```
 
 If any observed mean exceeds $`q+\Delta`$, monotonicity of $`d(z\Vert q)`$ above $`q`$, followed by (F4) at $`z=q+\Delta`$, gives
 
 ```math
 \max\{I_0,I_\theta\}\ge I_0\ge\frac{w_{\min}\Delta^2}{2D_+}.
-\tag{F5}
+\qquad\text{(F5)}
 ```
 
 For all remaining transcripts, the observed means and every target mean lie in the one-sided box $`[0,q+\Delta]^3`$. Target means are strictly positive by [the model identity](model.md#one-pair-one-counted-output). Normalize the observed means as in [Eq. E37](error_exponent.md#normalized-means), and set $`L_0=\alpha(x_1^2+x_2^2)+\beta y^2`$. Applying (F4) gives
@@ -69,7 +69,7 @@ For all remaining transcripts, the observed means and every target mean lie in t
 I_0\ge\frac{b^2\kappa}{D_+}L_0,
 \qquad
 I_\theta\ge\frac{b^2\kappa}{D_+}L_{1,\varepsilon},
-\tag{F6}
+\qquad\text{(F6)}
 ```
 
 where, before expanding in polar coordinates,
@@ -79,7 +79,7 @@ L_{1,\varepsilon}
 =\alpha(x_1-\cos\theta-\varepsilon)^2
 +\alpha(x_2-\sin\theta-\varepsilon)^2
 +\beta[y-\cos(\theta-\phi)-\varepsilon]^2.
-\tag{F7}
+\qquad\text{(F7)}
 ```
 
 Write $`L_1=L_{1,0}`$ for the unshifted quadratic form. The vector removed on setting $`\varepsilon=0`$ has squared weighted norm
@@ -89,7 +89,7 @@ $`\varepsilon^2(2\alpha+\beta)=\varepsilon^2/2`$. The triangle inequality theref
 \sqrt{\max\{L_0,L_{1,\varepsilon}\}}
 \ge\sqrt{\max\{L_0,L_1\}}-\frac{\varepsilon}{\sqrt2}
 \ge\sqrt{e(f)}-\frac{\varepsilon}{\sqrt2}.
-\tag{F8}
+\qquad\text{(F8)}
 ```
 
 This holds also at zero pilot radius with every lifted angle. Combining the interior bound (F6)–(F8) with (F5), and minimizing over the complete space in [Eq. E22](error_exponent.md#exact-variational-exponent), proves (F2). There is no rotational-symmetry assumption in this argument. In particular, the same $`c\kappa`$ shift in the two differently oriented pilot means is explicitly included in (F7).
@@ -103,7 +103,7 @@ E_{f_*}(\kappa)\ge
 \left(\sqrt{e_*}-\frac{c\sqrt\kappa}{b\sqrt2}\right)_+^2,
 \qquad 0\lt \kappa\lt 1.
 \quad}
-\tag{F9}
+\qquad\text{(F9)}
 ```
 
 This lower bound is particularly useful because its comparison to the known-phase classical coefficient involves only elementary algebra and square roots. Its ratio to a fixed positive coefficient times $`\kappa`$ decreases with $`\kappa`$ while the bracket remains positive: the denominator increases and the positive bracket decreases. A certificate at $`\kappa_0`$ therefore also certifies every $`0\lt \kappa\le\kappa_0`$.
@@ -118,7 +118,7 @@ Set $`\lambda=(G-1)/G\in(0,1)`$. Direct simplification of $`J_G=b^2/[q(1+q)]`$ g
 J_G=
 \frac{4n(n+1)\lambda}
 {[n+(B+1)\lambda][n+1+B\lambda]}.
-\tag{F10}
+\qquad\text{(F10)}
 ```
 
 Its reciprocal, apart from the positive numerator constant, is
@@ -126,7 +126,7 @@ Its reciprocal, apart from the positive numerator constant, is
 ```math
 \frac{n(n+1)}\lambda+B(B+1)\lambda
 +nB+(n+1)(B+1).
-\tag{F11}
+\qquad\text{(F11)}
 ```
 
 If $`B>n`$, the minimizer is interior:
@@ -134,7 +134,7 @@ If $`B>n`$, the minimizer is interior:
 ```math
 \lambda_* =\sqrt{\frac{n(n+1)}{B(B+1)}},\qquad
 G_* =\frac{\sqrt{B(B+1)}}{\sqrt{B(B+1)}-\sqrt{n(n+1)}},
-\tag{F12}
+\qquad\text{(F12)}
 ```
 
 and
@@ -143,7 +143,7 @@ and
 J_*=
 \frac{4n(n+1)}
 {[\sqrt{(B+1)(n+1)}+\sqrt{Bn}]^2}.
-\tag{F13}
+\qquad\text{(F13)}
 ```
 
 If $`B\le n`$, the leading coefficient increases with $`G`$ and has no finite maximizing gain; its supremum over fixed gains is
@@ -151,7 +151,7 @@ If $`B\le n`$, the leading coefficient increases with $`G`$ and has no finite ma
 ```math
 \sup_{G>1}J_G=\frac{4n(n+1)}{(n+B+1)^2},
 \qquad G\to\infty.
-\tag{F14}
+\qquad\text{(F14)}
 ```
 
 This distinction matters if the formula is stated outside the bright-background regime. The main theorem holds at each fixed finite gain. Neither (F14) nor the weak-reflectivity expansion asserts that an unbounded-gain apparatus is a free physical resource.
@@ -162,14 +162,14 @@ Take
 
 ```math
 n=\frac1{1000},\qquad B=10,\qquad G=G_*,\qquad f=f_*.
-\tag{F15}
+\qquad\text{(F15)}
 ```
 
 For comparison, denote the phase-informed optimal coherent-state coefficient by
 
 ```math
 C_{\rm cl}=\frac{n}{(\sqrt{B+1}+\sqrt B)^2}.
-\tag{F16}
+\qquad\text{(F16)}
 ```
 
 The [classical-converse theorem](classical_limit.md) establishes this phase-informed exponent coefficient for the full stated classical transmitter class; (F16) is the benchmark input used here. The exact certificate (F9) gives, at $`\kappa_0=1/10`$,
@@ -177,7 +177,7 @@ The [classical-converse theorem](classical_limit.md) establishes this phase-info
 ```math
 \frac{E_{f_*}(\kappa_0)}{\kappa_0 C_{\rm cl}}
 \ge 1.1926527308\ldots > 1.1926.
-\tag{F17}
+\qquad\text{(F17)}
 ```
 
 The bracket in (F9) is positive. Monotonicity stated after (F9) proves the same conservative factor $`1.1926`$ for every $`0\lt \kappa\le1/10`$. This is an analytic global certificate for the fixed-$`\kappa`$, large-$`N`$ exponent, independent of optimizing the exact rate numerically. It is not a finite-$`N`$ bound of the form $`P_e\le\exp(-NE_f(\kappa))`$ without a prefactor.

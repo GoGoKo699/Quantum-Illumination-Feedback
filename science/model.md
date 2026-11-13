@@ -96,7 +96,7 @@ Let $`Z_x`$ and $`Z_y`$ be the two photon-count sample means. Set
 
 ```math
 \widehat\phi
-=\operatorname{Arg}\big[(Z_x-q)+i(Z_y-q)\big],
+=\mathrm{Arg}\big[(Z_x-q)+i(Z_y-q)\big],
 ```
 
 with the declared value $`0`$ when both centered means vanish. Measure all remaining $`m_0=N-m_x-m_y`$ pairs at that one phase. Their sample mean is $`Z_0`$.

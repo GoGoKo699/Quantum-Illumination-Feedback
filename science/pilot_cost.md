@@ -47,13 +47,13 @@ be the **total** number of pilot pairs. The two fixed phases are $`0`$ and $`\pi
 
 ```math
 \widehat\phi_N
-=\operatorname{Arg}\big[(Z_x-q)+i(Z_y-q)\big].
+=\mathrm{Arg}\big[(Z_x-q)+i(Z_y-q)\big].
 ```
 
 Consider the event $`A_N`$ that all pilot counts vanish. Both sample means are then zero, so the commanded phase is always
 
 ```math
-\phi_0=\operatorname{Arg}(-q-iq)=-3\pi/4,
+\phi_0=\mathrm{Arg}(-q-iq)=-3\pi/4,
 ```
 
 independently of $`N`$ and the pilot block sizes. This centered vector is nonzero, so the rule at the estimator's origin plays no role here.

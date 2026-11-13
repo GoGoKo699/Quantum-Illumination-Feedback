@@ -85,10 +85,10 @@ For any effect $`0\le T\le I`$ that decides the second hypothesis, decompose $`I
 ```math
 \begin{aligned}
 \sum_{ij}\min(p_{ij},q_{ij})
-&\le2\operatorname{Tr}(\rho T^2)
-+2\operatorname{Tr}\big[\sigma(I-T)^2\big]\\
-&\le2\operatorname{Tr}(\rho T)
-+2\operatorname{Tr}\big[\sigma(I-T)\big].
+&\le2\mathrm{Tr}(\rho T^2)
++2\mathrm{Tr}\big[\sigma(I-T)^2\big]\\
+&\le2\mathrm{Tr}(\rho T)
++2\mathrm{Tr}\big[\sigma(I-T)\big].
 \end{aligned}
 ```
 
@@ -105,7 +105,7 @@ This is the lower bound on error needed for the converse. It does not use a Cher
 Since $`\tau_B=(1-z)z^{a^\dagger a}`$, for $`0\lt s\lt 1`$,
 
 ```math
-Z_x(s)=\operatorname{Tr}(\rho^s\sigma_x^{1-s})
+Z_x(s)=\mathrm{Tr}(\rho^s\sigma_x^{1-s})
 =e^{-xc_z(s)},
 \qquad
 c_z(s)=\frac{1+z-z^s-z^{1-s}}{1-z}.
@@ -132,7 +132,7 @@ Zero-overlap terms have zero weight. Because $`B>0`$, both thermal states have f
 ```math
 \mathbb E_rL=0,
 \qquad
-\operatorname{Var}_rL
+\mathrm{Var}_rL
 =\frac{2x\sqrt z(\log z)^2}{1-z},
 \qquad
 c_z(1/2)=C_B.
@@ -145,7 +145,7 @@ Using $`\min(p,q)=\sqrt{pq}\,e^{-|\log(p/q)|/2}`$, Jensen's inequality and Cauch
 \sum_{ij}\min(p_{ij},q_{ij})
 &=Z_x(1/2)\,\mathbb E_r e^{-|L|/2}\\
 &\ge Z_x(1/2)e^{-\mathbb E_r|L|/2}\\
-&\ge e^{-C_Bx-\sqrt{\operatorname{Var}_rL}/2}
+&\ge e^{-C_Bx-\sqrt{\mathrm{Var}_rL}/2}
 =e^{-C_Bx-d_B\sqrt x}.
 \end{aligned}
 ```
@@ -177,7 +177,7 @@ The first Jensen step uses convexity of the exponential. The second uses $`\math
 The quantum Chernoff trace inequality, whose original proof covers infinite-dimensional states, gives
 
 ```math
-h_B(x)\le\frac12\operatorname{Tr}(\sqrt\rho\sqrt{\sigma_x})
+h_B(x)\le\frac12\mathrm{Tr}(\sqrt\rho\sqrt{\sigma_x})
 =\frac12e^{-C_Bx}.
 ```
 
