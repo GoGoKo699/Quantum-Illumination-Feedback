@@ -15,7 +15,7 @@ Each input is an independent two-mode squeezed-vacuum signal–idler pair of mea
 $$
 a_R=e^{i\theta}\sqrt\kappa\,a_S+\sqrt{1-\kappa}\,a_E,
 \qquad \langle a_E^\dagger a_E\rangle=\frac{B}{1-\kappa},
-\qquad 0<\kappa<1.
+\qquad 0\lt \kappa\lt 1.
 \tag{E1}
 $$
 
@@ -70,7 +70,7 @@ This is the directional Fisher information for the amplitude parameter $\sqrt\ka
 
 ### 1.2 The fixed-fraction policy
 
-Fix $0<f<1$. For a total of $N$ pairs, set
+Fix $0\lt f\lt 1$. For a total of $N$ pairs, set
 
 $$
 m_{p,N}=\lfloor fN/2\rfloor,\qquad m_{0,N}=N-2m_{p,N}.
@@ -111,7 +111,7 @@ The supremum is taken at each $N$. The proof will also provide a matching phase 
 
 ### 1.3 Main theorem
 
-For fixed $n,B>0$, $G>1$, $0<f<1$, and every fixed $0<\kappa<1$, the limit
+For fixed $n,B>0$, $G>1$, $0\lt f\lt 1$, and every fixed $0\lt \kappa\lt 1$, the limit
 
 $$
 E_f(\kappa)=\lim_{N\to\infty}-\frac1N\log R_N(\delta_N)
@@ -131,8 +131,8 @@ where
 $$
 e(f)=
 \begin{cases}
-\dfrac{f(1-f)}{2(2-f)},&0<f\le2/3,\\[4pt]
-\dfrac{2-f}{16},&2/3\le f<1.
+\dfrac{f(1-f)}{2(2-f)},&0\lt f\le2/3,\\[4pt]
+\dfrac{2-f}{16},&2/3\le f\lt 1.
 \end{cases}
 \tag{E14}
 $$
@@ -268,7 +268,7 @@ The GLRT thus accepts the target precisely when $I_{0,N}\ge I_{*,N}$. No iid com
 For this fixed $\kappa$, all conditional means lie in a compact positive interval. Choose $\overline\mu\ge\max\{q,q+c\kappa+b\sqrt\kappa\}$ and
 
 $$
-0<\lambda<\log(1+1/\overline\mu),\qquad
+0\lt \lambda\lt \log(1+1/\overline\mu),\qquad
 K(\lambda)=-\log\big[1-\overline\mu(e^\lambda-1)\big].
 \tag{E25}
 $$
@@ -343,7 +343,7 @@ The phase $\theta_*$ can depend on the fixed physical parameters and on $\kappa$
 
 ### 3.5 A finite phase grid is sufficient
 
-The continuous maximization in (E10) is not necessary for its exponent. Use the grid $\{2\pi j/N:0\le j<N\}$. On $z_j\le L$,
+The continuous maximization in (E10) is not necessary for its exponent. Use the grid $\{2\pi j/N:0\le j\lt N\}$. On $z_j\le L$,
 
 $$
 \left|\partial_\theta d(z\Vert\mu_\theta(\phi))\right|
@@ -356,7 +356,7 @@ where $\underline\mu>0$ bounds the means below. Thus the grid minimum of $I_{\th
 
 ## 4. Uniform weak-reflectivity reduction
 
-Set $t=\sqrt\kappa$. The only local expansion needed is the following elementary consequence of the explicit rate function. For each fixed $M<\infty$, uniformly over $|x|\le M$ and $|a|\le1$,
+Set $t=\sqrt\kappa$. The only local expansion needed is the following elementary consequence of the explicit rate function. For each fixed $M\lt \infty$, uniformly over $|x|\le M$ and $|a|\le1$,
 
 $$
 d(q+btx\Vert q+bta+ct^2)
@@ -476,8 +476,8 @@ $(\alpha^2/v_0+2\alpha\beta+\beta^2v_0)/(4h)$ gives its unique unconstrained min
 $$
 \min g_f=
 \begin{cases}
-\alpha\beta/h=\dfrac{f(1-f)}{2(2-f)},&0<f\le2/3,\\[5pt]
-h/4=\dfrac{2-f}{16},&2/3\le f<1,
+\alpha\beta/h=\dfrac{f(1-f)}{2(2-f)},&0\lt f\le2/3,\\[5pt]
+h/4=\dfrac{2-f}{16},&2/3\le f\lt 1,
 \end{cases}
 \tag{E46}
 $$

@@ -4,7 +4,7 @@
 
 The quantum receiver learns the target phase from its own data. The comparison below gives a classical transmitter's receiver the true phase and arbitrary collective reception. It also permits arbitrary randomization of signal energy subject only to its mean. The resulting ceiling is therefore a deliberately favorable classical benchmark.
 
-Natural logarithms are used. The channel and matched background are those of [the model](model.md), with $n,B>0$ and $0<\kappa<1$.
+Natural logarithms are used. The channel and matched background are those of [the model](model.md), with $n,B>0$ and $0\lt \kappa\lt 1$.
 
 ## Preparation class and theorem
 
@@ -102,7 +102,7 @@ This is the lower bound on error needed for the converse. It does not use a Cher
 
 ### Exact thermal affinity
 
-Since $\tau_B=(1-z)z^{a^\dagger a}$, for $0<s<1$,
+Since $\tau_B=(1-z)z^{a^\dagger a}$, for $0\lt s\lt 1$,
 
 $$
 Z_x(s)=\operatorname{Tr}(\rho^s\sigma_x^{1-s})
@@ -127,7 +127,7 @@ r_{ij}=\frac{\sqrt{p_{ij}q_{ij}}}{Z_x(1/2)},
 \qquad L_{ij}=\log\frac{p_{ij}}{q_{ij}}.
 $$
 
-Zero-overlap terms have zero weight. Because $B>0$, both thermal states have full support. The moment-generating function of $L$ is $Z_x(1/2+t)/Z_x(1/2)$, finite for $|t|<1/2$. Differentiation and symmetry around $1/2$ therefore give
+Zero-overlap terms have zero weight. Because $B>0$, both thermal states have full support. The moment-generating function of $L$ is $Z_x(1/2+t)/Z_x(1/2)$, finite for $|t|\lt 1/2$. Differentiation and symmetry around $1/2$ therefore give
 
 $$
 \mathbb E_rL=0,

@@ -12,7 +12,7 @@ The worst-phase symmetric error has a large-sample exponent $E_\kappa$: its expo
 
 | Result | What is established |
 |---|---|
-| Paid feedback advantage | At $n=0.001$, $B=10$, and the specified fixed gain and pilot fraction, $E_\kappa>1.1926\,\kappa nC_B$ for every fixed $0<\kappa\le0.1$. |
+| Paid feedback advantage | At $n=0.001$, $B=10$, and the specified fixed gain and pilot fraction, $E_\kappa>1.1926\,\kappa nC_B$ for every fixed $0\lt \kappa\le0.1$. |
 | Strong classical comparison | $\kappa nC_B$, with $C_B=(\sqrt{B+1}-\sqrt B)^2$, is the optimal exponent for fixed classical mixtures of coherent signals at the same total mean signal energy, even with the true phase and arbitrary global reception. |
 | Solved pilot allocation | In the weak-reflectivity limit, the optimal pilot fraction within this policy is $f_*=2-\sqrt2\approx58.6\%$. |
 | Failure of sublinear pilots | If the receiver uses $o(N)$ fixed-brightness pilots and then freezes one counted OPA output at the learned phase, its worst-phase error exponent is zero, regardless of the final classical decision rule. |
@@ -38,8 +38,8 @@ $$
 $$
 R(f)=
 \begin{cases}
-\dfrac{4f(1-f)}{2-f},&0<f\le2/3,\\[4pt]
-1-f/2,&2/3\le f<1.
+\dfrac{4f(1-f)}{2-f},&0\lt f\le2/3,\\[4pt]
+1-f/2,&2/3\le f\lt 1.
 \end{cases}
 $$
 
@@ -71,6 +71,14 @@ Start with the [scientific route](science/README.md), or go directly to the ques
 
 [The reading guide](llms.txt) maps common questions to the authoritative files.
 
+## Learn the project
+
+The single educational anchor is Jeffrey H. Shapiro's [*The Quantum Illumination Story*](https://arxiv.org/abs/1910.12277v4), published in 2020; the linked author manuscript is version 4, revised 23 December 2019. Its optical picture leads into the [source-to-project bridge](learning/bridge.md), which translates the notation, walks through a complete count record, and explains why learning a phase accurately on typical trials does not settle detection reliability.
+
+The [30-milestone map](learning/milestones.md) has two connected phases: 12 background milestones assemble the optical and statistical ingredients into the detection experiment, and 18 contribution milestones follow the feedback policy through its proof, classical comparison and physical scope. Each milestone states its understanding target, dependencies and source route.
+
+Start at the [learning entrypoint](learning/README.md), or use the scientific links above to inspect a theorem directly.
+
 ## Reproduce the certificate
 
 From the repository root:
@@ -80,6 +88,8 @@ python3 verification/run_all.py
 ```
 
 The required certificate uses only Python's standard library. Its inequalities compare exact rational endpoints, including outward-rounded square roots. [Verification instructions](verification/README.md) also explain the optional exact-rate numerical minimization and plot generation. Numerical searches corroborate the written rate analysis; the strict separation follows from the global analytic bound and its rational evaluation.
+
+A separate [hosted mathematics check](verification/hosted_math/README.md) compares the formulas displayed by GitHub with an exact source revision and saves page captures for visual inspection.
 
 ## Scope
 

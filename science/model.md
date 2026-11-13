@@ -10,7 +10,7 @@ The phase is one unknown constant across the experiment. This differs from a pha
 
 ## Signal and channel
 
-Fix a signal brightness $n>0$, a return background $B>0$, a power reflectivity $0<\kappa<1$, and an OPA gain $G>1$. These four parameters are known. Each of $N$ independent signal–idler pairs is a two-mode squeezed vacuum,
+Fix a signal brightness $n>0$, a return background $B>0$, a power reflectivity $0\lt \kappa\lt 1$, and an OPA gain $G>1$. These four parameters are known. Each of $N$ independent signal–idler pairs is a two-mode squeezed vacuum,
 
 $$
 |\psi_n\rangle_{SI}
@@ -85,7 +85,7 @@ The OPA apparatus, this count law, and its phase-informed detection advantage ar
 
 ## Paid pilot protocol
 
-Choose a fixed pilot fraction $0<f<1$. Use $m_x=m_y=\lfloor fN/2\rfloor$ pairs at phases $0$ and $\pi/2$, respectively. Thus
+Choose a fixed pilot fraction $0\lt f\lt 1$. Use $m_x=m_y=\lfloor fN/2\rfloor$ pairs at phases $0$ and $\pi/2$, respectively. Thus
 
 $$
 \frac{m_x}{N}\longrightarrow\frac f2,\qquad

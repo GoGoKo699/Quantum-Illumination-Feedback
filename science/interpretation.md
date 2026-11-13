@@ -21,8 +21,8 @@ The phase-informed OPA exponent has leading coefficient $\kappa J_G/8$. The [ada
 $$
 R(f)=
 \begin{cases}
-\dfrac{4f(1-f)}{2-f},&0<f\le 2/3,\\[4pt]
-1-f/2,&2/3\le f<1.
+\dfrac{4f(1-f)}{2-f},&0\lt f\le 2/3,\\[4pt]
+1-f/2,&2/3\le f\lt 1.
 \end{cases}
 $$
 

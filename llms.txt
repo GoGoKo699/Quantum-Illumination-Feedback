@@ -5,6 +5,8 @@ An unknown static return phase can be learned with a paid set of pairwise measur
 ## Reading routes
 
 - Question and main consequences: README.md, then science/interpretation.md.
+- Physical introduction and notation from the single Shapiro2020 educational anchor: learning/README.md and learning/bridge.md. The anchor is The Quantum Illumination Story, using author manuscript arXiv:1910.12277v4 (23 December 2019).
+- Project understanding targets and dependencies: learning/milestones.md, exactly M01–M30. M01–M12 assemble the background; M13–M30 connect the feedback mechanism to the complete contribution.
 - State, channel, optical measurement, resource accounting and error convention: science/model.md.
 - Exact adaptive-transcript law, large-sample theorem and weak-reflectivity allocation: science/error_exponent.md.
 - Global strict advantage at specified nonzero reflectivity: science/finite_reflectivity.md.
@@ -12,6 +14,7 @@ An unknown static return phase can be learned with a paid set of pairwise measur
 - Why rare wrong settings matter: science/pilot_cost.md.
 - Attribution and nearest adaptive proposals: references/RELATED_WORK.md and references/references.bib.
 - Reproducible calculations and their scope: verification/README.md.
+- Exact-source GitHub mathematics and screenshot capture: verification/hosted_math/README.md.
 
 ## Preserve these distinctions
 

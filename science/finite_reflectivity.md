@@ -2,7 +2,7 @@
 
 [Scientific route](README.md) · [Model](model.md) · [Error-exponent proof](error_exponent.md) · [Classical limit](classical_limit.md) · [Verification](../verification/README.md)
 
-The exact transcript exponent admits a global lower bound at a specified nonzero reflectivity. For the example below, it certifies a strict advantage throughout $0<\kappa\le0.1$, without estimating a Taylor remainder or assuming that a numerical optimizer found the global minimum.
+The exact transcript exponent admits a global lower bound at a specified nonzero reflectivity. For the example below, it certifies a strict advantage throughout $0\lt \kappa\le0.1$, without estimating a Taylor remainder or assuming that a numerical optimizer found the global minimum.
 
 Use $q,b,c$ from the [count model](model.md#one-pair-one-counted-output), and let $e(f)$ be the [solved Gaussian minimax coefficient](error_exponent.md#allocation-law). Thus
 
@@ -26,7 +26,7 @@ D_+=(q+\Delta)(1+q+\Delta),
 \tag{F1}
 $$
 
-and keep $w_{\min}=\min\{f/2,1-f\}$. For every $0<\kappa<1$,
+and keep $w_{\min}=\min\{f/2,1-f\}$. For every $0\lt \kappa\lt 1$,
 
 $$
 \boxed{\quad
@@ -49,7 +49,7 @@ d(z\Vert\mu)=\int_\mu^z\frac{z-s}{s(1+s)}\,ds.
 \tag{F3}
 $$
 
-Whenever $0\le z\le q+\Delta$ and $0<\mu\le q+\Delta$, it follows, including $z=0$ by continuity, that
+Whenever $0\le z\le q+\Delta$ and $0\lt \mu\le q+\Delta$, it follows, including $z=0$ by continuity, that
 
 $$
 d(z\Vert\mu)\ge\frac{(z-\mu)^2}{2D_+}.
@@ -94,19 +94,19 @@ $$
 
 This holds also at zero pilot radius with every lifted angle. Combining the interior bound (F6)–(F8) with (F5), and minimizing over the complete space in [Eq. E22](error_exponent.md#exact-variational-exponent), proves (F2). There is no rotational-symmetry assumption in this argument. In particular, the same $c\kappa$ shift in the two differently oriented pilot means is explicitly included in (F7).
 
-For the optimizing fraction, $f_*<2/3$, so $w_{\min}=f_*/2$, and $w_{\min}/2=f_*/4>e_*$. The first entry of the minimum in (F2) is at least $e_*$, whereas the second is at most $e_*$. Consequently
+For the optimizing fraction, $f_*\lt 2/3$, so $w_{\min}=f_*/2$, and $w_{\min}/2=f_*/4>e_*$. The first entry of the minimum in (F2) is at least $e_*$, whereas the second is at most $e_*$. Consequently
 
 $$
 \boxed{\quad
 E_{f_*}(\kappa)\ge
 \frac{b^2\kappa}{(q+\Delta)(1+q+\Delta)}
 \left(\sqrt{e_*}-\frac{c\sqrt\kappa}{b\sqrt2}\right)_+^2,
-\qquad 0<\kappa<1.
+\qquad 0\lt \kappa\lt 1.
 \quad}
 \tag{F9}
 $$
 
-This lower bound is particularly useful because its comparison to the known-phase classical coefficient involves only elementary algebra and square roots. Its ratio to a fixed positive coefficient times $\kappa$ decreases with $\kappa$ while the bracket remains positive: the denominator increases and the positive bracket decreases. A certificate at $\kappa_0$ therefore also certifies every $0<\kappa\le\kappa_0$.
+This lower bound is particularly useful because its comparison to the known-phase classical coefficient involves only elementary algebra and square roots. Its ratio to a fixed positive coefficient times $\kappa$ decreases with $\kappa$ while the bracket remains positive: the denominator increases and the positive bracket decreases. A certificate at $\kappa_0$ therefore also certifies every $0\lt \kappa\le\kappa_0$.
 
 ## 2. Gain optimization and an explicit finite operating interval
 
@@ -180,7 +180,7 @@ $$
 \tag{F17}
 $$
 
-The bracket in (F9) is positive. Monotonicity stated after (F9) proves the same conservative factor $1.1926$ for every $0<\kappa\le1/10$. This is an analytic global certificate for the fixed-$\kappa$, large-$N$ exponent, independent of optimizing the exact rate numerically. It is not a finite-$N$ bound of the form $P_e\le\exp(-NE_f(\kappa))$ without a prefactor.
+The bracket in (F9) is positive. Monotonicity stated after (F9) proves the same conservative factor $1.1926$ for every $0\lt \kappa\le1/10$. This is an analytic global certificate for the fixed-$\kappa$, large-$N$ exponent, independent of optimizing the exact rate numerically. It is not a finite-$N$ bound of the form $P_e\le\exp(-NE_f(\kappa))$ without a prefactor.
 
 For orientation, the parameter values and limiting comparison are
 
