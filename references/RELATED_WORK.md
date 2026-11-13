@@ -30,9 +30,9 @@ The broader statistical setting is controlled sensing. [Nitinawarat, Atia, and V
 
 [Nair and Gu (2020)](https://doi.org/10.1364/OPTICA.391335), Eq. (6), give the standard classical-illumination exponent. In their notation the reflectivity is a power and `N_S` is total signal energy. With `N` signals of mean energy `n`, the per-pair known-phase coefficient is
 
-$$
+```math
 \kappa n\bigl(\sqrt{B+1}-\sqrt B\bigr)^2.
-$$
+```
 
 [classical_limit.md](../science/classical_limit.md) states the preparation class explicitly as classical mixtures of coherent signals, allowing arbitrary label-conditioned idlers and a total mean signal-energy constraint. It proves a finite-energy error lower bound that is uniform under energy randomization, then gives the receiver both the preparation label and the true phase. Classicality is a condition on the joint preparation, not merely on the signal marginal.
 

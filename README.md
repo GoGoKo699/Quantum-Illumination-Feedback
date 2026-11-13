@@ -6,52 +6,52 @@ Phase learning followed by local reception is an established idea. The result he
 
 ## Principal results
 
-Let $N$ be the total number of signal–idler pairs. Each signal has mean occupation $n$, the return background has occupation $B$, and the power reflectivity is $\kappa$. The return phase is unknown but constant across all $N$ uses. All other model parameters are known.
+Let $`N`$ be the total number of signal–idler pairs. Each signal has mean occupation $`n`$, the return background has occupation $`B`$, and the power reflectivity is $`\kappa`$. The return phase is unknown but constant across all $`N`$ uses. All other model parameters are known.
 
-The worst-phase symmetric error has a large-sample exponent $E_\kappa$: its exponential scale is $\exp(-NE_\kappa)$. The [exact transcript theorem](science/error_exponent.md) proves existence of that exponent and gives an attaining likelihood test using all observations.
+The worst-phase symmetric error has a large-sample exponent $`E_\kappa`$: its exponential scale is $`\exp(-NE_\kappa)`$. The [exact transcript theorem](science/error_exponent.md) proves existence of that exponent and gives an attaining likelihood test using all observations.
 
 | Result | What is established |
 |---|---|
-| Paid feedback advantage | At $n=0.001$, $B=10$, and the specified fixed gain and pilot fraction, $E_\kappa>1.1926\,\kappa nC_B$ for every fixed $0\lt \kappa\le0.1$. |
-| Strong classical comparison | $\kappa nC_B$, with $C_B=(\sqrt{B+1}-\sqrt B)^2$, is the optimal exponent for fixed classical mixtures of coherent signals at the same total mean signal energy, even with the true phase and arbitrary global reception. |
-| Solved pilot allocation | In the weak-reflectivity limit, the optimal pilot fraction within this policy is $f_*=2-\sqrt2\approx58.6\%$. |
-| Failure of sublinear pilots | If the receiver uses $o(N)$ fixed-brightness pilots and then freezes one counted OPA output at the learned phase, its worst-phase error exponent is zero, regardless of the final classical decision rule. |
+| Paid feedback advantage | At $`n=0.001`$, $`B=10`$, and the specified fixed gain and pilot fraction, $`E_\kappa>1.1926\,\kappa nC_B`$ for every fixed $`0\lt \kappa\le0.1`$. |
+| Strong classical comparison | $`\kappa nC_B`$, with $`C_B=(\sqrt{B+1}-\sqrt B)^2`$, is the optimal exponent for fixed classical mixtures of coherent signals at the same total mean signal energy, even with the true phase and arbitrary global reception. |
+| Solved pilot allocation | In the weak-reflectivity limit, the optimal pilot fraction within this policy is $`f_*=2-\sqrt2\approx58.6\%`$. |
+| Failure of sublinear pilots | If the receiver uses $`o(N)`$ fixed-brightness pilots and then freezes one counted OPA output at the learned phase, its worst-phase error exponent is zero, regardless of the final classical decision rule. |
 
-The first row is a **global analytic certificate at nonzero reflectivity**, evaluated with exact rational interval arithmetic. It concerns an asymptotic exponent in $N$, rather than a finite-sample error probability with its prefactor omitted. See [the finite-reflectivity proof](science/finite_reflectivity.md) and [the classical converse](science/classical_limit.md).
+The first row is a **global analytic certificate at nonzero reflectivity**, evaluated with exact rational interval arithmetic. It concerns an asymptotic exponent in $`N`$, rather than a finite-sample error probability with its prefactor omitted. See [the finite-reflectivity proof](science/finite_reflectivity.md) and [the classical converse](science/classical_limit.md).
 
 ## The feedback law
 
-For a fixed OPA gain $G>1$, write
+For a fixed OPA gain $`G>1`$, write
 
-$$
+```math
 q=Gn+(G-1)(B+1),
 \qquad
 J_G=\frac{4G(G-1)n(n+1)}{q(1+q)}.
-$$
+```
 
-At a fixed positive pilot fraction $f$, the exponent satisfies
+At a fixed positive pilot fraction $`f`$, the exponent satisfies
 
-$$
+```math
 E_\kappa(f,G)=\frac{\kappa J_G}{8}R(f)+O(\kappa^{3/2}),
-$$
+```
 
-$$
+```math
 R(f)=
 \begin{cases}
 \dfrac{4f(1-f)}{2-f},&0\lt f\le2/3,\\[4pt]
 1-f/2,&2/3\le f\lt 1.
 \end{cases}
-$$
+```
 
-The large-sample limit is taken first, followed by $\kappa\downarrow0$ with $n,B,G,f$ fixed. The maximum retains $12-8\sqrt2\approx68.6\%$ of the phase-informed OPA exponent. Two balanced predetermined settings retain $50\%$ at leading order.
+The large-sample limit is taken first, followed by $`\kappa\downarrow0`$ with $`n,B,G,f`$ fixed. The maximum retains $`12-8\sqrt2\approx68.6\%`$ of the phase-informed OPA exponent. Two balanced predetermined settings retain $`50\%`$ at leading order.
 
 ![Fraction of the phase-informed OPA leading exponent retained by the paid two-stage policy, with its optimum and the balanced-setting reference.](figures/pilot_fraction.svg)
 
-At the finite brightnesses $n=0.001$ and $B=10$, the optimized leading quantum/classical ratio is $1.2339558846\ldots$. The [gain calculation](science/finite_reflectivity.md) and the [allocation proof](science/error_exponent.md) specify the optimization domain. Neither optimizes over all adaptive quantum receivers.
+At the finite brightnesses $`n=0.001`$ and $`B=10`$, the optimized leading quantum/classical ratio is $`1.2339558846\ldots`$. The [gain calculation](science/finite_reflectivity.md) and the [allocation proof](science/error_exponent.md) specify the optimization domain. Neither optimizes over all adaptive quantum receivers.
 
 ## Why calibration must be counted
 
-If all pilot counts are zero, the declared estimator chooses the same pump phase for every sample size. One fixed target phase then makes the entire main-stage count distribution exactly equal to the target-absent distribution. With $o(N)$ pilots, that shared record has probability $\exp[-o(N)]$, preventing a positive worst-phase exponent. The [pilot theorem](science/pilot_cost.md) accounts for the unequal probabilities of that record under both hypotheses and permits every final decision rule.
+If all pilot counts are zero, the declared estimator chooses the same pump phase for every sample size. One fixed target phase then makes the entire main-stage count distribution exactly equal to the target-absent distribution. With $`o(N)`$ pilots, that shared record has probability $`\exp[-o(N)]`$, preventing a positive worst-phase exponent. The [pilot theorem](science/pilot_cost.md) accounts for the unequal probabilities of that record under both hypotheses and permits every final decision rule.
 
 With a positive pilot fraction, the [complete-transcript proof](science/error_exponent.md) controls all rare pilot outcomes on the same exponential scale as detection. It handles unbounded photon counts, the estimator's origin, the count lattice, and a phase fixed independently of sample size.
 

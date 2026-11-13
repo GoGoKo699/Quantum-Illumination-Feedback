@@ -8,7 +8,7 @@ The allocation follows that scientific structure. The optical ingredients requir
 
 The sole educational anchor is Jeffrey H. Shapiro, *The Quantum Illumination Story* (2020), in the selected [author version arXiv:1910.12277v4](https://arxiv.org/abs/1910.12277v4), dated 23 December 2019. Page and equation pointers below refer to that version's numbered PDF pages. The review supplies optical and detection context. Where a milestone concerns the adaptive transcript or another project derivation, its anchor pointer is contextual; the linked project proof supplies the result.
 
-The notation is the project's: $N$ is the total number of pairs, $n$ their fixed signal brightness, $B$ the matched return background, and $\kappa$ the power reflectivity. In the two-stage protocol, $0\lt f\lt 1$. The two equal pilot groups each have $m_{p,N}$ pairs; their total is $M_N=2m_{p,N}$ in the fixed-fraction protocol. The main group has $m_{0,N}=N-M_N$ pairs. The target phase is one unknown constant throughout the experiment. The large-sample limit at fixed reflectivity precedes the weak-reflectivity limit.
+The notation is the project's: $`N`$ is the total number of pairs, $`n`$ their fixed signal brightness, $`B`$ the matched return background, and $`\kappa`$ the power reflectivity. In the two-stage protocol, $`0\lt f\lt 1`$. The two equal pilot groups each have $`m_{p,N}`$ pairs; their total is $`M_N=2m_{p,N}`$ in the fixed-fraction protocol. The main group has $`m_{0,N}=N-M_N`$ pairs. The target phase is one unknown constant throughout the experiment. The large-sample limit at fixed reflectivity precedes the weak-reflectivity limit.
 
 ## Background/preliminaries — M01–M12
 
@@ -88,7 +88,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Dependencies and story role:** Uses [M03](#m03) and [M04](#m04). It introduces the actual receiver component before discussing its statistical performance.
 
-**Conceptual connection:** The operator $c_\phi$ describes an optical mode, while the scalar $c$ in the output mean is a coefficient. Keeping that distinction connects the hardware transformation to the count model.
+**Conceptual connection:** The operator $`c_\phi`$ describes an optical mode, while the scalar $`c`$ in the output mean is a coefficient. Keeping that distinction connects the hardware transformation to the count model.
 
 **Sources:** Anchor: [pp. 5–6, OPA discussion and Eqs. (15)–(16)](https://arxiv.org/pdf/1910.12277v4#page=6), with [p. 12, Appendix C](https://arxiv.org/pdf/1910.12277v4#page=12) for correlation quadratures. Project: [one pair, one counted output](../science/model.md#one-pair-one-counted-output).
 
@@ -116,7 +116,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** Why can a useful correlation become invisible at an unsuitable receiver phase?
 
-**Understanding target:** Read the dependence on $\cos(\theta-\phi)$ in the measured mean and distinguish the unknown target phase from the controlled pump phase. Relate phase alignment to the accessible correlation quadrature.
+**Understanding target:** Read the dependence on $`\cos(\theta-\phi)`$ in the measured mean and distinguish the unknown target phase from the controlled pump phase. Relate phase alignment to the accessible correlation quadrature.
 
 **Dependencies and story role:** Uses [M04](#m04), [M05](#m05), and [M06](#m06). It identifies the nuisance parameter that motivates feedback.
 
@@ -132,7 +132,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** Against which preparations and resources should a quantum advantage be compared?
 
-**Understanding target:** Identify the class of coherent-signal mixtures with label-conditioned retained states, the total mean signal budget $Nn$, and the phase-informed collective receiver allowed on the classical side. Distinguish that class from a condition on the signal marginal alone.
+**Understanding target:** Identify the class of coherent-signal mixtures with label-conditioned retained states, the total mean signal budget $`Nn`$, and the phase-informed collective receiver allowed on the classical side. Distinguish that class from a condition on the signal marginal alone.
 
 **Dependencies and story role:** Uses [M02](#m02), [M03](#m03), and [M04](#m04). It fixes the comparison before any receiver advantage is asserted.
 
@@ -180,7 +180,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** How is the probability cost of an atypical count average quantified?
 
-**Understanding target:** Interpret $d(z\Vert\mu)$ as the geometric sample-mean rate, with a unique zero at the true mean and positive local curvature. Distinguish this exact large-deviation cost from a Gaussian approximation near the mean.
+**Understanding target:** Interpret $`d(z\Vert\mu)`$ as the geometric sample-mean rate, with a unique zero at the true mean and positive local curvature. Distinguish this exact large-deviation cost from a Gaussian approximation near the mean.
 
 **Dependencies and story role:** Uses [M06](#m06) and [M10](#m10). It supplies the statistical language for rare pilot records and later global minimization.
 
@@ -214,7 +214,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** Which observations and photons belong to the feedback experiment?
 
-**Understanding target:** Track two equal pilot groups of size $m_{p,N}=\lfloor fN/2\rfloor$, the remaining $m_{0,N}$ pairs, and their common fixed brightness. Explain why all $N$ pairs contribute both to the transmitted-energy budget and to the final evidence.
+**Understanding target:** Track two equal pilot groups of size $`m_{p,N}=\lfloor fN/2\rfloor`$, the remaining $`m_{0,N}`$ pairs, and their common fixed brightness. Explain why all $`N`$ pairs contribute both to the transmitted-energy budget and to the final evidence.
 
 **Dependencies and story role:** Uses [M08](#m08) and [M12](#m12). It begins the new mechanism with its charged resources rather than assuming a free calibration stage.
 
@@ -230,7 +230,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** Exactly how do the pilot counts choose the main receiver phase?
 
-**Understanding target:** Interpret the argument of $(Z_x-q)+i(Z_y-q)$ as the commanded phase and preserve its declared centering at the null mean $q$. Distinguish the estimator's zero vector from a pilot record containing zero photons, and retain the assigned phase zero at the former.
+**Understanding target:** Interpret the argument of $`(Z_x-q)+i(Z_y-q)`$ as the commanded phase and preserve its declared centering at the null mean $`q`$. Distinguish the estimator's zero vector from a pilot record containing zero photons, and retain the assigned phase zero at the former.
 
 **Dependencies and story role:** Uses [M07](#m07) and [M13](#m13). It makes the control policy explicit before any likelihood or accuracy claim.
 
@@ -326,7 +326,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** Why is the rate-function minimization the achievable worst-phase detection exponent?
 
-**Understanding target:** Connect GLRT decision regions to a uniform upper bound on risk, and a single-type overlap to a converse at one phase fixed independently of $N$. Interpret the minimization of the larger of the two rate costs and the exponent-optimality of the GLRT for this specified optical protocol.
+**Understanding target:** Connect GLRT decision regions to a uniform upper bound on risk, and a single-type overlap to a converse at one phase fixed independently of $`N`$. Interpret the minimization of the larger of the two rate costs and the exponent-optimality of the GLRT for this specified optical protocol.
 
 **Dependencies and story role:** Integrates [M09](#m09), [M16](#m16), [M18](#m18), and [M19](#m19). It closes the first full proof: the exact fixed-reflectivity experiment has an operational exponent.
 
@@ -342,7 +342,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** When is a quadratic approximation valid for the records that determine the error exponent?
 
-**Understanding target:** Explain how an order-$\kappa$ trial value and domination by the null rate force all relevant sample means within order $\sqrt\kappa$ of $q$. Connect this localization to the uniform remainder of order $\kappa^{3/2}$ at fixed $n,B,G,f$.
+**Understanding target:** Explain how an order-$`\kappa`$ trial value and domination by the null rate force all relevant sample means within order $`\sqrt\kappa`$ of $`q`$. Connect this localization to the uniform remainder of order $`\kappa^{3/2}`$ at fixed $`n,B,G,f`$.
 
 **Dependencies and story role:** Uses [M11](#m11) and [M20](#m20). It derives a manageable local problem from the exact global theorem.
 
@@ -360,9 +360,9 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Understanding target:** Interpret the pilot radius, phase alignment, and main-stage fluctuation in the quadratic minimax problem. Explain the reduction to aligned scalar coordinates and the transition from an interior angular minimizer to the boundary at perfect alignment.
 
-**Dependencies and story role:** Uses [M21](#m21). It solves the local geometry and explains the two branches of $e(f)$ rather than treating them as fitted formulas.
+**Dependencies and story role:** Uses [M21](#m21). It solves the local geometry and explains the two branches of $`e(f)`$ rather than treating them as fitted formulas.
 
-**Conceptual connection:** The exponent is determined by the most economical misleading record, whose geometry changes with the allocation. Treat $f=1$ as a separate balanced fixed-setting experiment, since the implemented two-stage policy has $0\lt f\lt 1$.
+**Conceptual connection:** The exponent is determined by the most economical misleading record, whose geometry changes with the allocation. Treat $`f=1`$ as a separate balanced fixed-setting experiment, since the implemented two-stage policy has $`0\lt f\lt 1`$.
 
 **Sources:** Anchor context: [p. 6, phase-informed OPA benchmark, Eq. (17)](https://arxiv.org/pdf/1910.12277v4#page=6). Project derivation: [Gaussian minimax solution, Eqs. E41–E47](../science/error_exponent.md#5-exact-solution-of-the-gaussian-minimax-problem).
 
@@ -374,7 +374,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** How much of this experiment should be allocated to learning the measurement direction?
 
-**Understanding target:** Explain why $f_*=2-\sqrt2$ maximizes the leading exponent within the declared policy and why pilot outcomes remain useful detection data. Distinguish the retained fraction $12-8\sqrt2$ of phase-informed OPA performance from a ratio to the classical optimum.
+**Understanding target:** Explain why $`f_*=2-\sqrt2`$ maximizes the leading exponent within the declared policy and why pilot outcomes remain useful detection data. Distinguish the retained fraction $`12-8\sqrt2`$ of phase-informed OPA performance from a ratio to the classical optimum.
 
 **Dependencies and story role:** Uses [M13](#m13) and [M22](#m22). It converts the solved geometry into an explicit receiver allocation.
 
@@ -390,7 +390,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** How does amplifier gain balance useful correlation against output fluctuations?
 
-**Understanding target:** Connect the exact directional information $J_G$ to the source, background, and gain. Distinguish the finite leading-order optimum when $B>n$ from the unbounded-gain supremum when $B\le n$.
+**Understanding target:** Connect the exact directional information $`J_G`$ to the source, background, and gain. Distinguish the finite leading-order optimum when $`B>n`$ from the unbounded-gain supremum when $`B\le n`$.
 
 **Dependencies and story role:** Uses [M05](#m05), [M21](#m21), and [M23](#m23). It selects a concrete fixed receiver gain for the subsequent comparison.
 
@@ -410,7 +410,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Dependencies and story role:** Uses [M08](#m08), [M10](#m10), [M12](#m12), and [M20](#m20). It establishes the comparator for the complete preparation class rather than one classical receiver.
 
-**Conceptual connection:** The statistical proof must remain valid when the classical preparation changes with $N$ and has only a finite mean-energy constraint. The spectral and thermal-affinity arguments are substantive proof ingredients supplied by the project account.
+**Conceptual connection:** The statistical proof must remain valid when the classical preparation changes with $`N`$ and has only a finite mean-energy constraint. The spectral and thermal-affinity arguments are substantive proof ingredients supplied by the project account.
 
 **Sources:** Anchor context: [p. 3, Eq. (4) and classical optimality discussion](https://arxiv.org/pdf/1910.12277v4#page=3). Project proof: [one-mode bound](../science/classical_limit.md#a-one-mode-thermal-testing-bound), [preparation-label averaging](../science/classical_limit.md#revealing-the-preparation-label), and [matching coherent achievability](../science/classical_limit.md#matching-coherent-achievability).
 
@@ -422,7 +422,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** How can a strict gap be certified without relying on an unspecified asymptotic remainder?
 
-**Understanding target:** Understand the split between a bounded count box and its complement, the geometric-curvature bound inside, the null-rate cost outside, and the triangle inequality controlling the common $c\kappa$ shift. Keep the exact asymmetric phase dependence and all lifted origin angles.
+**Understanding target:** Understand the split between a bounded count box and its complement, the geometric-curvature bound inside, the null-rate cost outside, and the triangle inequality controlling the common $`c\kappa`$ shift. Keep the exact asymmetric phase dependence and all lifted origin angles.
 
 **Dependencies and story role:** Uses [M20](#m20), [M22](#m22), and [M25](#m25). It converts the local solution into a global lower bound for the exact fixed-reflectivity exponent.
 
@@ -438,7 +438,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** Which conclusions come from proof, certified arithmetic, and numerical minimization?
 
-**Understanding target:** Separate the analytic global bound, its rational-interval evaluation, and a multistart saddle search. Interpret the certified exponent factor above 1.1926 for $n=0.001$, $B=10$, and $0\lt \kappa\le0.1$, with the declared gain and fraction, without converting it into a finite-sample accuracy percentage.
+**Understanding target:** Separate the analytic global bound, its rational-interval evaluation, and a multistart saddle search. Interpret the certified exponent factor above 1.1926 for $`n=0.001`$, $`B=10`$, and $`0\lt \kappa\le0.1`$, with the declared gain and fraction, without converting it into a finite-sample accuracy percentage.
 
 **Dependencies and story role:** Uses [M23](#m23)–[M26](#m26). It supplies an independently inspectable finite-parameter separation and the correct role of the supporting calculations.
 
@@ -454,7 +454,7 @@ The notation is the project's: $N$ is the total number of pairs, $n$ their fixed
 
 **Central question:** Why can a sublinear pilot budget give zero worst-phase exponent even when all data are retained?
 
-**Understanding target:** Explain how an all-zero record in two positive pilot blocks has centered vector $(-q,-q)$ and always commands phase $-3\pi/4$, and how a single fixed true phase makes the entire main count law equal to the null law. Relate the event's cost to the total pilot count $M_N$, yielding zero per-pair exponent when $M_N=o(N)$.
+**Understanding target:** Explain how an all-zero record in two positive pilot blocks has centered vector $`(-q,-q)`$ and always commands phase $`-3\pi/4`$, and how a single fixed true phase makes the entire main count law equal to the null law. Relate the event's cost to the total pilot count $`M_N`$, yielding zero per-pair exponent when $`M_N=o(N)`$.
 
 **Dependencies and story role:** Uses [M10](#m10), [M14](#m14), [M16](#m16), and [M20](#m20). It explains the reliability cost behind a positive pilot fraction, beyond the optimization calculation.
 
