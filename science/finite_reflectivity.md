@@ -132,7 +132,7 @@ Its reciprocal, apart from the positive numerator constant, is
 If $`B>n`$, the minimizer is interior:
 
 ```math
-\lambda_* =\sqrt{\frac{n(n+1)}{B(B+1)}},\qquad
+\lambda_* =\frac{\sqrt{n(n+1)}}{\sqrt{B(B+1)}},\qquad
 G_* =\frac{\sqrt{B(B+1)}}{\sqrt{B(B+1)}-\sqrt{n(n+1)}},
 \qquad\text{(F12)}
 ```

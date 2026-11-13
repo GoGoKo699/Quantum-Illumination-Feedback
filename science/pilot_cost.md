@@ -30,7 +30,7 @@ For every fixed $`0\lt \kappa\lt 1`$, the mismatch
 exists in $`(0,\pi)`$, because
 
 ```math
-\frac cb=\frac12\sqrt{\frac{(G-1)n}{G(n+1)}}\lt \frac12.
+\frac cb=\frac{\sqrt{(G-1)n}}{2\sqrt{G(n+1)}}\lt \frac12.
 ```
 
 At $`\theta-\phi=\delta_\kappa`$, the main output has mean exactly $`q`$. A geometric law is determined by its mean, so **the entire count distribution equals the target-absent distribution**. This is stronger than vanishing of a first-order score.

@@ -31,4 +31,6 @@ By default, the collector checks every tracked Markdown page in the pinned revis
 
 The [repository workflow](../../.github/workflows/hosted-math.yml) runs on pull requests from this same repository, checks out the exact proposed commit and uses read-only repository permissions. Its artifacts expire after 14 days. A successful run establishes the reported source and viewport coverage at that time; it does not prove the science, replace visual inspection, or guarantee future renderer behavior.
 
+The workflow also captures overlapping ordinary viewports of the milestone introduction. These supplement full-page screenshots when GitHub's sticky toolbar covers a passage. The supplementary collector reads the same pinned revision, waits for scrolling to settle, and preserves the unmodified page, including its toolbar. Its screenshots require visual review and do not replace the complete structural report.
+
 For an interrupted capture, preserve the failed attempt. An explicit `--resume-from /absolute/path/to/previous-capture` may reuse passing receipts only when the exact revision, page scope, runtime, contract, artifact hashes and freshness checks match. Policy or authentication failures require their actual resolution; a retry does not change access permissions.

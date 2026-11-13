@@ -52,6 +52,11 @@ jobs:
             --repository "$GITHUB_REPOSITORY" \
             --revision "$CAPTURE_REVISION" \
             --output "$RUNNER_TEMP/hosted-math"
+      - name: Capture unobscured milestone viewports for visual inspection
+        run: |
+          export NODE_PATH="$RUNNER_TEMP/math-runtime/node_modules"
+          node verification/hosted_math/capture_visible_page.cjs \
+            "$GITHUB_WORKSPACE" "$RUNNER_TEMP/hosted-math" "$RUNNER_TEMP/hosted-visible"
       - name: Retain actual captures and comparison reports
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
@@ -60,5 +65,6 @@ jobs:
           path: |
             ${{ runner.temp }}/hosted-probe
             ${{ runner.temp }}/hosted-math
+            ${{ runner.temp }}/hosted-visible
           if-no-files-found: error
           retention-days: 14
