@@ -1,0 +1,106 @@
+[
+  {
+    "kappa": 0.1,
+    "n": 0.001,
+    "background": 10.0,
+    "gain": 1.003025748160108,
+    "pilot_fraction": 0.5857864376269049,
+    "fisher": 0.00034267160417505885,
+    "rate": 2.8940212029640215e-06,
+    "rate_over_kappa": 2.894021202964021e-05,
+    "ratio_to_optimum_known_phase_classical": 1.214799461514583,
+    "gaussian_normalized_rate": 0.08578643762690485,
+    "normalized_exact_rate": 0.08445465476869708,
+    "normalized_rates_at_saddle": [
+      0.08445465476869708,
+      0.08445465476704851
+    ],
+    "scaled_means_and_phase": [
+      0.34268893298376013,
+      0.34914490051345165,
+      0.49039375535278773,
+      1.3702920144993918
+    ],
+    "successful_starts": 42,
+    "starts": 48,
+    "scope": "Multistart constrained optimization corroborates the exact geometric rate; not a global numerical certificate."
+  },
+  {
+    "kappa": 0.01,
+    "n": 0.001,
+    "background": 10.0,
+    "gain": 1.003025748160108,
+    "pilot_fraction": 0.5857864376269049,
+    "fisher": 0.00034267160417505885,
+    "rate": 2.9250368705386223e-07,
+    "rate_over_kappa": 2.925036870538622e-05,
+    "ratio_to_optimum_known_phase_classical": 1.2278186530220783,
+    "gaussian_normalized_rate": 0.08578643762690485,
+    "normalized_exact_rate": 0.08535976821249314,
+    "normalized_rates_at_saddle": [
+      0.08535976820216928,
+      0.08535976821249314
+    ],
+    "scaled_means_and_phase": [
+      0.34340159544940346,
+      0.3516440836149962,
+      0.491889269418613,
+      1.3702879413279194
+    ],
+    "successful_starts": 48,
+    "starts": 48,
+    "scope": "Multistart constrained optimization corroborates the exact geometric rate; not a global numerical certificate."
+  },
+  {
+    "kappa": 0.001,
+    "n": 0.001,
+    "background": 10.0,
+    "gain": 1.003025748160108,
+    "pilot_fraction": 0.5857864376269049,
+    "fisher": 0.00034267160417505885,
+    "rate": 2.9350148428865426e-08,
+    "rate_over_kappa": 2.9350148428865422e-05,
+    "ratio_to_optimum_known_phase_classical": 1.2320070243522006,
+    "gaussian_normalized_rate": 0.08578643762690485,
+    "normalized_exact_rate": 0.08565094998029503,
+    "normalized_rates_at_saddle": [
+      0.08565094998029503,
+      0.08565094996941887
+    ],
+    "scaled_means_and_phase": [
+      0.34335500979778527,
+      0.35271898744710356,
+      0.49236480267238286,
+      1.3710700274251941
+    ],
+    "successful_starts": 48,
+    "starts": 48,
+    "scope": "Multistart constrained optimization corroborates the exact geometric rate; not a global numerical certificate."
+  },
+  {
+    "kappa": 0.0001,
+    "n": 0.001,
+    "background": 10.0,
+    "gain": 1.003025748160108,
+    "pilot_fraction": 0.5857864376269049,
+    "fisher": 0.00034267160417505885,
+    "rate": 2.938187515366032e-09,
+    "rate_over_kappa": 2.9381875153660317e-05,
+    "ratio_to_optimum_known_phase_classical": 1.2333387909666604,
+    "gaussian_normalized_rate": 0.08578643762690485,
+    "normalized_exact_rate": 0.08574353636448427,
+    "normalized_rates_at_saddle": [
+      0.08574353636448427,
+      0.08574353622493773
+    ],
+    "scaled_means_and_phase": [
+      0.34285808419039865,
+      0.35352925643109995,
+      0.4925152697459565,
+      1.3726829254945097
+    ],
+    "successful_starts": 42,
+    "starts": 48,
+    "scope": "Multistart constrained optimization corroborates the exact geometric rate; not a global numerical certificate."
+  }
+]

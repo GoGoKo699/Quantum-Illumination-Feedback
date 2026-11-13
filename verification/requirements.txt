@@ -1,0 +1,5 @@
+# Optional numerical diagnostic and figure generation.
+# The exact rational certificate uses only the Python standard library.
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
