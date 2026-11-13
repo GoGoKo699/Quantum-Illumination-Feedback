@@ -438,8 +438,8 @@ For fixed $`u\ge0`$, introduce
 $`v=(\sqrt\alpha r,\sqrt\beta y)`$ and $`w=(\sqrt\alpha,\sqrt\beta)`$. Then
 
 ```math
-L_0=\|v\|^2,\qquad
-L_1=\|v-uw\|^2+\alpha(1-u^2).
+L_0=\Vert v\Vert ^2,\qquad
+L_1=\Vert v-uw\Vert ^2+\alpha(1-u^2).
 \qquad\text{(E42)}
 ```
 

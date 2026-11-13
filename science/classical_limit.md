@@ -16,7 +16,7 @@ For each $`N`$, allow any fixed preparation
 |\alpha(\lambda)\rangle\langle\alpha(\lambda)|_S
 \otimes\sigma_I(\lambda),
 \qquad
-\int\|\alpha(\lambda)\|^2P_N(d\lambda)\le Nn.
+\int\Vert \alpha(\lambda)\Vert ^2P_N(d\lambda)\le Nn.
 ```
 
 Here $`\alpha`$ is an arbitrary complex $`N`$-vector, $`P_N`$ is a positive probability measure, and $`\sigma_I(\lambda)`$ is any retained state independent of target presence. The distribution can depend on $`N`$ and on the known parameters. Signal energy can be unbounded in individual realizations; no higher moment is required. The transmitter is chosen before target interaction.
@@ -156,7 +156,7 @@ Together with the spectral reduction this proves the one-mode error bound, inclu
 
 Give the receiver the complete label $`\lambda`$ as well as the true target phase. This can only reduce the minimum error. Conditional on the label, the retained idler is identical under both hypotheses and supplies no further information about target presence.
 
-The thermal product $`\tau_B^{\otimes N}`$ is invariant under passive mode mixing. A label-dependent passive unitary concentrates the known displacement vector into one return mode. With $`S_\lambda=\|\alpha(\lambda)\|^2`$, the conditional discrimination problem is exactly the one-mode problem with $`x=\kappa S_\lambda`$, tensored with $`N-1`$ identical, irrelevant thermal modes.
+The thermal product $`\tau_B^{\otimes N}`$ is invariant under passive mode mixing. A label-dependent passive unitary concentrates the known displacement vector into one return mode. With $`S_\lambda=\Vert \alpha(\lambda)\Vert ^2`$, the conditional discrimination problem is exactly the one-mode problem with $`x=\kappa S_\lambda`$, tensored with $`N-1`$ identical, irrelevant thermal modes.
 
 The genie-aided error is therefore $`\mathbb E h_B(\kappa S_\lambda)`$. The original error is at least this quantity. Applying the one-mode bound and then two Jensen inequalities gives
 
